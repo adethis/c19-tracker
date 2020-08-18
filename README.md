@@ -6,7 +6,18 @@ Project testing.
 
 ### Available Script
 
-### `npm start`
+#### `npm start`
+for running this project
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+
+### Package
+- Axios
+- React ChartJS 2
+- React Count UP
+- Classnames
+- TailwindCSS
+- Autoprfixer
+- PostCSS
