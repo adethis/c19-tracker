@@ -1,10 +1,10 @@
-## C19-tracker
 
-C19-tracker is a project testing and was bootstraped with [Create React App](https://github.com/facebook/create-react-app)
+This is a project was bootstraped with [Create React App](https://github.com/facebook/create-react-app)
+
+## C19-tracker
+Project testing.
 
 ### Available Script
-Asterisks
-
 
 ### `npm start`
 
