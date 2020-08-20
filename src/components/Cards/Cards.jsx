@@ -16,10 +16,10 @@ class Cards extends Component {
         return (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
                 <div className="md:flex rounded overflow-hidden shadow-lg border-b-4 border-yellow-300 p-4 bg-white">
-                    <div className="md:flex-shrink-0">
+                    <div className="inline-flex md:flex-shrink-0 sm:inline-block">
                         <img src={ infected } className="mt-5" alt=""/>
                     </div>
-                    <div className="mt-4 md:mt-0 md:ml-4">
+                    <div className="mt-4 md:mt-0 md:ml-4 inline-block sm:inline-block pl-4 sm:pl-4 md:pl-0">
                         <div className="uppercase tracking-wide text-sm text-yellow-300 font-medium">Infected</div>
                         <p className="block mt-1 text-lg leading-tight font-semibold text-gray-700">
                             <CountUp start={ 0 } end={ data.confirmed.value } duration={ 2.5 } separator="," />
@@ -30,13 +30,13 @@ class Cards extends Component {
                 </div>
 
                 <div className="md:flex rounded overflow-hidden shadow-lg border-b-4 border-teal-300 p-4 bg-white">
-                    <div className="md:flex-shrink-0">
+                    <div className="inline-flex md:flex-shrink-0 sm:inline-block">
                         <img src={ health } className="mt-5" alt=""/>
                     </div>
-                    <div className="mt-4 md:mt-0 md:ml-4">
+                    <div className="mt-4 md:mt-0 md:ml-4 inline-block sm:inline-block pl-4 sm:pl-4 md:pl-0">
                         <div className="uppercase tracking-wide text-sm text-teal-300 font-medium">Recovered</div>
                         <p className="block mt-1 text-lg leading-tight font-semibold text-gray-700">
-                            <CountUp start={ 0 } end={ data.confirmed.value } duration={ 2.5 } separator="," />
+                            <CountUp start={ 0 } end={ data.recovered.value } duration={ 2.5 } separator="," />
                         </p>
                         <p className="text-gray-700 text-base mt-2">{ new Date(data.lastUpdate).toDateString() }</p>
                         <p className="text-xs text-gray-600">Number of recoveries from Covid-19</p>
@@ -44,13 +44,13 @@ class Cards extends Component {
                 </div>
 
                 <div className="md:flex rounded overflow-hidden shadow-lg border-b-4 border-red-300 p-4 bg-white">
-                    <div className="md:flex-shrink-0">
+                    <div className="inline-flex md:flex-shrink-0 sm:inline-block">
                         <img src={ die } className="mt-3" alt=""/>
                     </div>
-                    <div className="mt-4 md:mt-0 md:ml-4">
+                    <div className="mt-4 md:mt-0 md:ml-4 inline-block sm:inline-block pl-4 sm:pl-4 md:pl-0">
                         <div className="uppercase tracking-wide text-sm text-red-300 font-medium">Death</div>
                         <p className="block mt-1 text-lg leading-tight font-semibold text-gray-700">
-                            <CountUp start={ 0 } end={ data.confirmed.value } duration={ 2.5 } separator="," />
+                            <CountUp start={ 0 } end={ data.deaths.value } duration={ 2.5 } separator="," />
                         </p>
                         <p className="text-gray-700 text-base mt-2">{ new Date(data.lastUpdate).toDateString() }</p>
                         <p className="text-xs text-gray-600">Number of death caused Covid-19</p>
